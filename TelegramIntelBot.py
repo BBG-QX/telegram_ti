@@ -9,11 +9,11 @@ from telethon.tl.functions.channels import JoinChannelRequest
 image_download_path = os.path.join(os.path.split(os.path.abspath(__file__))[0], '..', 'TelegramImages')
 
 # put your telegram api stuff in here
-telegram_client = TelegramClient('Bot Name', 'API ID', 'API HASH')
+telegram_client = TelegramClient('all_feed_AA', '15395097', '001e2fe1d140fb44132d53ef3057ef74')
 telegram_client.start()
 
 # put the discord hook url to the channel you want to receive feeds in here
-telegram_feed = Webhook.from_url('https://discord.com/api/webhooks/000/000', adapter=RequestsWebhookAdapter())
+telegram_feed = Webhook.from_url('https://discord.com/api/webhooks/1013707212100751370/3sxakrdezbPG8QHRklp22iHcr2zfl21UUbbe7_-6r2c-xHZ0ZdoWUtM7hXwOUJzgnmmM', adapter=RequestsWebhookAdapter())
 
 telegram_feed_list = {
     'ArvinGroup': 'https://t.me/arvin_club',
