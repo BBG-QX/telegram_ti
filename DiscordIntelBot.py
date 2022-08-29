@@ -20,13 +20,10 @@ configuration_file_path = os.path.join(
 )
 
 # put the discord hook urls to the channels you want to receive feeds in here
-private_sector_feed = Webhook.from_url('https://discord.com/api/webhooks/000/000', adapter=RequestsWebhookAdapter())
-government_feed = Webhook.from_url('https://discord.com/api/webhooks/000/000', adapter=RequestsWebhookAdapter())
-ransomware_feed = Webhook.from_url('https://discord.com/api/webhooks/000/000', adapter=RequestsWebhookAdapter())
-# this one is logging of moniotring status only
-status_messages = Webhook.from_url('https://discord.com/api/webhooks/000/000', adapter=RequestsWebhookAdapter())
+all_feed_AA = Webhook.from_url('https://discord.com/api/webhooks/1013707212100751370/3sxakrdezbPG8QHRklp22iHcr2zfl21UUbbe7_-6r2c-xHZ0ZdoWUtM7hXwOUJzgnmmM', adapter=RequestsWebhookAdapter())
 
-private_rss_feed_list = [
+
+all_feed_AA = [
     ['https://grahamcluley.com/feed/', 'Graham Cluley'],
     ['https://threatpost.com/feed/', 'Threatpost'],
     ['https://krebsonsecurity.com/feed/', 'Krebs on Security'],
@@ -53,9 +50,6 @@ private_rss_feed_list = [
     ['https://www.sentinelone.com/feed/', 'SentinelOne'],
     ['https://redcanary.com/feed/', 'RedCanary'],
     ['https://cybersecurity.att.com/site/blog-all-rss', 'ATT']
-]
-
-gov_rss_feed_list = [
     ["https://www.cisa.gov/uscert/ncas/alerts.xml", "US-CERT CISA"],
     ["https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml", "NCSC"],
     ["https://www.cisecurity.org/feed/advisories", "Center of Internet Security"],
